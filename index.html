@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>partial react website</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+      }
+      .post-container {
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, #ebf0eb, #fcfffd);
+        box-shadow: 2px 2px black;
+        box-shadow: 1px 0px 6px 0px rgb(76, 74, 74);
+      }
+      #post-comments-root {
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="post-container">
+      <h1 class="post-header">T-shirt for sale</h1>
+      <div class="post-body">
+        <img src="t-shirt.jpg" alt="img" width="300px" height="300px" />
+      </div>
+      <div id="post-comments-root"></div> <!--This is a react root node-->
+    </div>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="react/components/post-comments.js" type="text/babel"></script>
+  </body>
+</html>
